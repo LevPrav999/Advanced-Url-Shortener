@@ -11,7 +11,7 @@ import ru.levprav.services.linksservice.models.Link;
 import ru.levprav.services.linksservice.services.LinksService;
 
 @RestController
-@RequestMapping("links")
+@RequestMapping("link")
 public class LinksController {
     private final LinksService linksService;
 
