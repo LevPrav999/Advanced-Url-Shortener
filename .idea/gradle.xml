@@ -58,6 +58,16 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/services/auth-service" />
+        <option name="gradleJvm" value="openjdk-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/services/auth-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/services/links-service" />
         <option name="gradleJvm" value="openjdk-17" />
         <option name="modules">
