@@ -5,6 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="561ca8e1-8cb8-4998-8fd9-60fa53cdb054" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/common/api-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/api-gateway/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/api-gateway/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/api-gateway/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/api-gateway/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/api-gateway/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/api-gateway/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/api-gateway/src/main/java/ru/levprav/common/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/api-gateway/src/test/java/ru/levprav/common/apigateway/ApiGatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +25,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/common/api-gateway">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/common/eureka-server">
@@ -48,6 +62,13 @@
     <property name="jdk.selected.JAVA_MODULE" value="17" />
   </component>
   <component name="RunManager" selected="Spring Boot.ShortenerApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="api-gateway.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.levprav.common.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-server.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.levprav.common.eurekaserver.EurekaServerApplication" />
@@ -71,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687272300680</updated>
-      <workItem from="1687272303174" duration="515000" />
+      <workItem from="1687272303174" duration="688000" />
     </task>
     <task id="LOCAL-00001" summary="delete files">
       <created>1687272549168</created>
@@ -87,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687272565285</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add eureka server">
+      <created>1687272865922</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687272865922</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update server settings">
+      <created>1687272912669</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687272912669</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +132,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="delete files" />
     <MESSAGE value="add new files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new files" />
+    <MESSAGE value="add eureka server" />
+    <MESSAGE value="update server settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="update server settings" />
   </component>
 </project>
