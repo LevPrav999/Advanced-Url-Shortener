@@ -13,7 +13,7 @@ import java.util.Collections;
 @Setter
 public class JwtAuthentication implements Authentication {
     private boolean authenticated;
-    private String email;
+    private String login;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -22,17 +22,17 @@ public class JwtAuthentication implements Authentication {
 
     @Override
     public Object getCredentials() {
-        return email;
+        return login;
     }
 
     @Override
     public Object getDetails() {
-        return email;
+        return login;
     }
 
     @Override
     public Object getPrincipal() {
-        return email;
+        return login;
     }
 
     @Override
@@ -47,6 +47,6 @@ public class JwtAuthentication implements Authentication {
 
     @Override
     public String getName() {
-        return email;
+        return login;
     }
 }

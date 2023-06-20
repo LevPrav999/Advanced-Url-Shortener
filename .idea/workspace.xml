@@ -131,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687272300680</updated>
-      <workItem from="1687272303174" duration="14856000" />
+      <workItem from="1687272303174" duration="15157000" />
     </task>
     <task id="LOCAL-00001" summary="delete files">
       <created>1687272549168</created>
@@ -280,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687287737134</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add gitignore">
+      <created>1687288069949</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1687288069949</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +315,8 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="update settings" />
     <MESSAGE value="update settings + bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="update settings + bug fixes" />
+    <MESSAGE value="add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

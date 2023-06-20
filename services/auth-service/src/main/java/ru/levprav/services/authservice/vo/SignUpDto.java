@@ -1,6 +1,6 @@
 package ru.levprav.services.authservice.vo;
 
-import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Login;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;

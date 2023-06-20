@@ -16,7 +16,7 @@ public class UsersService {
 
     public User create(User user) {
         if (usersRepository.existsByLogin(user.getLogin()))
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User with this email already exists!");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User with this login already exists!");
         System.out.println(user.getId());
         System.out.println(user.getLogin());
         System.out.println(user.getPassword());

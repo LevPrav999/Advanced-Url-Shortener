@@ -23,7 +23,7 @@ public class UsersController {
     }
 
     @GetMapping("login/{login}")
-    public User findByEmail(@PathVariable String login) {
+    public User findByLogin(@PathVariable String login) {
         return usersService.findByLogin(login);
     }
 }
