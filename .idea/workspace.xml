@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="561ca8e1-8cb8-4998-8fd9-60fa53cdb054" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/links-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/links-service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/links-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/links-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/links-service/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/links-service/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/links-service/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/LinksServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/links-service/src/test/java/ru/levprav/services/linksservice/LinksServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/dto/CreateLinkDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/exceptions/SimpleHttpException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/models/Link.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/repositories/ILinksRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/services/LinksService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/utils/RandomString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687272300680</updated>
-      <workItem from="1687272303174" duration="1023000" />
+      <workItem from="1687272303174" duration="1344000" />
     </task>
     <task id="LOCAL-00001" summary="delete files">
       <created>1687272549168</created>
@@ -147,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687273055336</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add links service and settings">
+      <created>1687273413134</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687273413134</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update controller to the new package name">
+      <created>1687273658073</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687273658073</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +168,8 @@
     <MESSAGE value="update server settings" />
     <MESSAGE value="add api gateway" />
     <MESSAGE value="update gateway settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="update gateway settings" />
+    <MESSAGE value="add links service and settings" />
+    <MESSAGE value="update controller to the new package name" />
+    <option name="LAST_COMMIT_MESSAGE" value="update controller to the new package name" />
   </component>
 </project>
