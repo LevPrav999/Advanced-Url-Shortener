@@ -1,1 +1,10 @@
 rootProject.name = 'shortener'
+
+includeBuild 'common/eureka-server'
+includeBuild 'common/api-gateway'
+includeBuild 'common/config-server'
+
+includeBuild 'services/links-service'
+includeBuild 'services/auth-service'
+includeBuild 'services/users-service'
+

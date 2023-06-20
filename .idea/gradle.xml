@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/common/eureka-server" name="eureka-server">
+                <projects>
+                  <project path="$PROJECT_DIR$/common/eureka-server" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/common/api-gateway" name="api-gateway">
+                <projects>
+                  <project path="$PROJECT_DIR$/common/api-gateway" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/common/config-server" name="config-server">
+                <projects>
+                  <project path="$PROJECT_DIR$/common/config-server" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/services/links-service" name="links-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/services/links-service" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/services/auth-service" name="auth-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/services/auth-service" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/services/users-service" name="users-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/services/users-service" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="openjdk-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/common/api-gateway" />
+            <option value="$PROJECT_DIR$/common/config-server" />
+            <option value="$PROJECT_DIR$/common/eureka-server" />
+            <option value="$PROJECT_DIR$/services/auth-service" />
+            <option value="$PROJECT_DIR$/services/links-service" />
+            <option value="$PROJECT_DIR$/services/users-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common/api-gateway" />
+        <option name="gradleJvm" value="openjdk-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/common/api-gateway" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common/config-server" />
+        <option name="gradleJvm" value="openjdk-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/common/config-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common/eureka-server" />
+        <option name="gradleJvm" value="openjdk-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/common/eureka-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/services/auth-service" />
+        <option name="gradleJvm" value="openjdk-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/services/auth-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/services/links-service" />
+        <option name="gradleJvm" value="openjdk-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/services/links-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/services/users-service" />
+        <option name="gradleJvm" value="openjdk-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/services/users-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
