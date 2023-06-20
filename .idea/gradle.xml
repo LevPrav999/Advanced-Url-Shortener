@@ -3,12 +3,36 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/common/eureka-server" name="eureka-server">
+                <projects>
+                  <project path="$PROJECT_DIR$/common/eureka-server" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/common/api-gateway" name="api-gateway">
+                <projects>
+                  <project path="$PROJECT_DIR$/common/api-gateway" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/services/links-service" name="links-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/services/links-service" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="openjdk-17" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/common/api-gateway" />
+            <option value="$PROJECT_DIR$/common/eureka-server" />
+            <option value="$PROJECT_DIR$/services/links-service" />
           </set>
         </option>
       </GradleProjectSettings>
