@@ -5,19 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="561ca8e1-8cb8-4998-8fd9-60fa53cdb054" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/auth-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/AuthServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth-service/src/test/java/ru/levprav/services/authservice/AuthServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/feign/UsersClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/filters/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/models/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/repositories/ITokensRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/services/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/services/JwtProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/services/TokensService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/utils/GenerateSecrets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/utils/JwtAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/utils/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/vo/JwtRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/vo/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/vo/RefreshRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/vo/SignUpDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/vo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/security/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/security/filters/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/security/services/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/security/services/JwtProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/security/utils/JwtAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/links-service/src/main/java/ru/levprav/services/linksservice/security/utils/JwtUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/java/ru/levprav/services/authservice/AuthServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/links-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/services/links-service/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +56,14 @@
     <projectState path="$PROJECT_DIR$/services/links-service">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -117,7 +141,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687272300680</updated>
-      <workItem from="1687272303174" duration="2334000" />
+      <workItem from="1687272303174" duration="4653000" />
     </task>
     <task id="LOCAL-00001" summary="delete files">
       <created>1687272549168</created>
@@ -231,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687274550633</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add auth service">
+      <created>1687274907375</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687274907375</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +285,7 @@
     <MESSAGE value="update services to the new package name" />
     <MESSAGE value="update utils to the new package name" />
     <MESSAGE value="update settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="update settings" />
+    <MESSAGE value="add auth service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auth service" />
   </component>
 </project>
