@@ -16,9 +16,19 @@
                   <project path="$PROJECT_DIR$/common/api-gateway" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/common/config-server" name="config-server">
+                <projects>
+                  <project path="$PROJECT_DIR$/common/config-server" />
+                </projects>
+              </build>
               <build path="$PROJECT_DIR$/services/links-service" name="links-service">
                 <projects>
                   <project path="$PROJECT_DIR$/services/links-service" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/services/auth-service" name="auth-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/services/auth-service" />
                 </projects>
               </build>
             </builds>
@@ -31,7 +41,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/common/api-gateway" />
+            <option value="$PROJECT_DIR$/common/config-server" />
             <option value="$PROJECT_DIR$/common/eureka-server" />
+            <option value="$PROJECT_DIR$/services/auth-service" />
             <option value="$PROJECT_DIR$/services/links-service" />
           </set>
         </option>
@@ -43,6 +55,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/common/api-gateway" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common/config-server" />
+        <option name="gradleJvm" value="openjdk-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/common/config-server" />
           </set>
         </option>
       </GradleProjectSettings>

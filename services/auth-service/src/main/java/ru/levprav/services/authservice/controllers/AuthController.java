@@ -19,7 +19,7 @@ import ru.levprav.services.authservice.vo.SignUpDto;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("auth")
+@RequestMapping("a")
 public class AuthController {
     private final AuthService authService;
 
@@ -33,7 +33,7 @@ public class AuthController {
     public ResponseEntity<JwtResponse> signup(@RequestBody @Valid SignUpDto dto, BindingResult bindingResult) {
         if (bindingResult.hasErrors())
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, bindingResult.getAllErrors().get(0).getDefaultMessage());
-
+        System.out.println(1123123123123123123L);
         JwtResponse tokens = authService.signup(dto);
         return ResponseEntity.ok(tokens);
     }

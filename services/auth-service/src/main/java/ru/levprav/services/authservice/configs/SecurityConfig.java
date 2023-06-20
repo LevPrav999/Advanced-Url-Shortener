@@ -29,10 +29,10 @@ public class SecurityConfig {
                 .authorizeHttpRequests(
                         authz -> authz
                                 .requestMatchers(
-                                        "/auth/**"
+                                        "/a/**"
                                 )
                                 .permitAll()
-                                .anyRequest().authenticated()
+                                .anyRequest().permitAll()
                                 .and()
                                 .addFilterAfter(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 ).build();
