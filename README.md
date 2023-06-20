@@ -1,4 +1,4 @@
-# Сократитель ссылок
+# Сократитель ссылок [Back-end]
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
