@@ -13,7 +13,6 @@ public class UsersController {
 
     @PostMapping("create")
     public User create(@RequestBody User user) {
-        System.out.println(11111111);
         return usersService.create(user);
     }
 
