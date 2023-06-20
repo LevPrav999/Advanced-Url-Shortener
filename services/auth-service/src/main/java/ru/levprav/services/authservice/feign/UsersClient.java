@@ -4,14 +4,14 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import ru.levprav.services.authservice.vo.User;
 
-@FeignClient("USERS-SERVICE")
+@FeignClient("users")
 public interface UsersClient {
-    @PostMapping("users")
+    @PostMapping("user/create")
     User create(@RequestBody User user);
 
-    @GetMapping("users/id/{id}")
+    @GetMapping("user/id/{id}")
     User findById(@PathVariable Long id);
 
-    @GetMapping("users/login/{login}")
+    @GetMapping("user/login/{login}")
     User findByLogin(@PathVariable String login);
 }

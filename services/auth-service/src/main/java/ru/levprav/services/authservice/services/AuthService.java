@@ -43,6 +43,9 @@ public class AuthService {
 
         String accessToken = jwtProvider.generateToken(user, false);
         String refreshToken = jwtProvider.generateToken(user, true);
+        System.out.println(accessToken);
+        System.out.println(refreshToken);
+        System.out.println(user.getId());
         tokensService.create(refreshToken, user.getId());
 
         return new JwtResponse(accessToken, refreshToken);

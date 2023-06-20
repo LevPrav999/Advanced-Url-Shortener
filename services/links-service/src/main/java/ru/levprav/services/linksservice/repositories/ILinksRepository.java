@@ -6,5 +6,7 @@ import ru.levprav.services.linksservice.models.Link;
 import java.util.Optional;
 
 public interface ILinksRepository extends JpaRepository<Link, Integer> {
-    Optional<Link> findByAccessHash(String accessHash);
+    Link findByAccessHash(String accessHash);
+
+
 }

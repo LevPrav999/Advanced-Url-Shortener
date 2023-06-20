@@ -19,8 +19,7 @@ public class Link {
 
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "links_seq")
-    @SequenceGenerator(name = "links_seq", sequenceName = "links_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "access_hash")
@@ -29,5 +28,11 @@ public class Link {
     @Column(name = "target_url")
     private String targetUrl;
 
+
+    @Column(name = "clicks")
+    private int clicks;
+
+    @Column(name = "owner_name")
+    private String ownerName;
 
 }

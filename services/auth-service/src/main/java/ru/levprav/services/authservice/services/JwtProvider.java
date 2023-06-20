@@ -41,7 +41,7 @@ public class JwtProvider {
                 .setSubject(user.getLogin())
                 .setExpiration(expiration)
                 .signWith(refresh ? refreshSecret : accessSecret)
-                .claim("email", user.getLogin())
+                .claim("login", user.getLogin())
                 .compact();
     }
 

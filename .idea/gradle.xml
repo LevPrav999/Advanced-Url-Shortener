@@ -31,6 +31,11 @@
                   <project path="$PROJECT_DIR$/services/auth-service" />
                 </projects>
               </build>
+              <build path="$PROJECT_DIR$/services/users-service" name="users-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/services/users-service" />
+                </projects>
+              </build>
             </builds>
           </compositeBuild>
         </compositeConfiguration>
@@ -45,6 +50,7 @@
             <option value="$PROJECT_DIR$/common/eureka-server" />
             <option value="$PROJECT_DIR$/services/auth-service" />
             <option value="$PROJECT_DIR$/services/links-service" />
+            <option value="$PROJECT_DIR$/services/users-service" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -95,6 +101,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/services/links-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/services/users-service" />
+        <option name="gradleJvm" value="openjdk-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/services/users-service" />
           </set>
         </option>
       </GradleProjectSettings>

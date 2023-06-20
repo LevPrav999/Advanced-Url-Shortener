@@ -33,7 +33,7 @@ public class LinksController {
 
     @GetMapping("{hash}")
     public String getByAccessHash(@PathVariable String hash) {
-        return linksService.getByAccessHash(hash.replace("/", "")).getTargetUrl();
+        return linksService.getByAccessHash(hash).getTargetUrl();
     }
 
     @ExceptionHandler(SimpleHttpException.class)

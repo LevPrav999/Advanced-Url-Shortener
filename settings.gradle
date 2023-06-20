@@ -6,4 +6,5 @@ includeBuild 'common/config-server'
 
 includeBuild 'services/links-service'
 includeBuild 'services/auth-service'
+includeBuild 'services/users-service'
 
