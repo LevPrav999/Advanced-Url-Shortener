@@ -38,8 +38,15 @@ public class LinksService {
         int clicks = link.getClicks();
         clicks++;
         link.setClicks(clicks);
-        linksRepository.save(link);
 
         return linksRepository.save(link);
+    }
+
+    public Link getInfoByAccessHash(String hash) throws SimpleHttpException {
+        Link link = linksRepository.findByAccessHash(hash);
+        if (link == null)
+            throw new SimpleHttpException(HttpStatus.NOT_FOUND, "Link not found!");
+
+        return link;
     }
 }
