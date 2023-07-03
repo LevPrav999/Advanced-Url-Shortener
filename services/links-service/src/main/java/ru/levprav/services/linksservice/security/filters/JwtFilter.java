@@ -1,33 +1,43 @@
 package ru.levprav.services.linksservice.security.filters;
 
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.GenericFilterBean;
-import ru.levprav.services.linksservice.security.services.JwtProvider;
 import ru.levprav.services.linksservice.security.utils.JwtAuthentication;
 import ru.levprav.services.linksservice.security.utils.JwtUtils;
 
+import javax.crypto.SecretKey;
 import java.io.IOException;
+import java.security.Key;
 
 @Component
-@RequiredArgsConstructor
 public class JwtFilter extends GenericFilterBean {
     private static final String AUTHORIZATION = "Authorization";
-    private final JwtProvider jwtProvider;
+
+    private final SecretKey accessSecret;
+
+    public JwtFilter(
+            @Value("${jwt.secret.access}") String accessSecret
+    ){
+        this.accessSecret = Keys.hmacShaKeyFor(Decoders.BASE64.decode(accessSecret));
+    }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain fc) throws IOException, ServletException {
         String token = getTokenFromRequest((HttpServletRequest) request);
-        if (token != null && jwtProvider.validateAccessToken(token)) {
-            Claims claims = jwtProvider.getAccessClaims(token);
+        if (token != null && validateAccessToken(token)) {
+            Claims claims = getAccessClaims(token);
             JwtAuthentication jwtAuthentication = JwtUtils.generate(claims);
             jwtAuthentication.setAuthenticated(true);
             SecurityContextHolder.getContext().setAuthentication(jwtAuthentication);
@@ -41,5 +51,32 @@ public class JwtFilter extends GenericFilterBean {
             return bearer.substring(7);
         }
         return null;
+    }
+
+    public boolean validateAccessToken(String accessToken) {
+        return validateToken(accessToken, accessSecret);
+    }
+
+    private boolean validateToken(String token, Key secret) {
+        try {
+            Jwts.parserBuilder()
+                    .setSigningKey(secret)
+                    .build()
+                    .parseClaimsJws(token);
+            return true;
+        } catch (Exception ignored) {}
+        return false;
+    }
+
+    public Claims getAccessClaims(String token) {
+        return getClaims(token, accessSecret);
+    }
+
+    private Claims getClaims(String token, Key secret) {
+        return Jwts.parserBuilder()
+                .setSigningKey(secret)
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
     }
 }
