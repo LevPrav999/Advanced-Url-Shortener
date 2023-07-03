@@ -36,6 +36,11 @@ public class LinksController {
         return linksService.getByAccessHash(hash).getTargetUrl();
     }
 
+    @GetMapping("/info/{hash}")
+    public Link getInfoByAccessHash(@PathVariable String hash) {
+        return linksService.getInfoByAccessHash(hash);
+    }
+
     @ExceptionHandler(SimpleHttpException.class)
     public ResponseEntity handlerException(SimpleHttpException e) {
         return ResponseEntity
